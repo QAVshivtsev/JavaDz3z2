@@ -3,10 +3,10 @@ public class Main {
         BmiService service = new BmiService();
         double m = 98; // Значение вводится в киллограмах
         double h = 1.87; // Значение вводится в метрах
-        double bmi = (int)Math.round(service.calculate(m, h)); // должно получиться 28
+        double bmi = (int) Math.round(service.calculate(m, h)); // должно получиться 28
         System.out.println(bmi);
 
-        System.out.println( ); //пустая строка, далее делаю проверочный тест
+        System.out.println(); //пустая строка, далее делаю проверочный тест
         System.out.println("Расчитываем для человека 1.7 метра и весом 94 киллограмма");
         System.out.println(Math.round(service.calculate(94, 1.7)));
     }
